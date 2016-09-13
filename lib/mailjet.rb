@@ -1,16 +1,4 @@
-require 'active_support'
-require 'ostruct'
-require 'mailjet/core_extensions/ostruct'
 require 'mailjet/configuration'
-require 'mailjet/api_error'
-
-require 'mailjet/resource'
-require 'mailjet/message_delivery'
-
-Dir[File.expand_path("../mailjet/resources/*.rb", __FILE__)].each do |file|
-  require file
-end
-
 module Mailjet
   def self.configure
     yield Mailjet::Configuration
