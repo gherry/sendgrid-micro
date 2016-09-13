@@ -1,6 +1,6 @@
-script: bundle exec rake
+language: ruby
+
 rvm:
-  - ree
-  - 1.9.3
-  - rbx
-  - jruby
+  - 2.2.5
+script:
+  - bundle exec rspec spec
