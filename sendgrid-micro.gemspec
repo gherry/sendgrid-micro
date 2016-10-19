@@ -3,17 +3,17 @@
 $:.push File.expand_path("../lib", __FILE__)
 
 # Maintain your gem's version:
-require "mailjet/version"
+require "sendgrid_micro/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.name        = "mailjet-micro"
-  s.version     = Mailjet::VERSION
-  s.authors     = ["Tyler Nappy", "Jean-Baptiste Escoyez", "Aurélien AMILIN", "Benoit Bénézech"]
-  s.email       = ["tyler@mailjet.com", "devrel-team@mailjet.com", "jbescoyez@gmail.com"]
-  s.homepage    = "http://www.mailjet.com"
-  s.summary     = "Basic Mailjet ActionMailer support"
-  s.description = "Basic Mailjet ActionMailer support"
+  s.name        = "sendgrid-micro"
+  s.version     = SendgridMicro::VERSION
+  s.authors     = ["Gherry Harahap"]
+  s.email       = ["gherry@tradegecko.com"]
+  s.homepage    = "https://sendgrid.com/docs/API_Reference/index.html"
+  s.summary     = "Basic SendGrid ActionMailer support"
+  s.description = "Basic SendGrid ActionMailer support"
 
 
   s.files = Dir["{lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]

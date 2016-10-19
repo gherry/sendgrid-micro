@@ -1,7 +1,7 @@
 require 'active_support'
 require 'rack/request'
 
-module Mailjet
+module SendgridMicro
   module Rack
     class Endpoint
       def initialize(app, path, &block)

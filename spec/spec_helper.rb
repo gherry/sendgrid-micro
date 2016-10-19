@@ -1,11 +1,12 @@
 require 'minitest/autorun'
 require 'minitest/matchers'
 require 'minitest/pride'
-require 'mailjet'
+require 'sendgrid-micro'
 
 MiniTest::Spec.before do
-  Mailjet.configure do |config|
-    config.api_key = 'aaaa'
-    config.secret_key = 'bbbb'
+  SendgridMicro.configure do |config|
+    config.username = "Glinda"
+    config.password = "thegood"
+    config.domain   = "glinda@wicked.com"
   end
 end
