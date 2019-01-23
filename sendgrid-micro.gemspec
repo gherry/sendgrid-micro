@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.homepage    = "https://sendgrid.com/docs/API_Reference/index.html"
   s.summary     = "Basic SendGrid ActionMailer support"
   s.description = "Basic SendGrid ActionMailer support"
-
+  s.license     = 'MIT'
 
   s.files = Dir["{lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
   s.test_files = Dir["spec/**/*"]
